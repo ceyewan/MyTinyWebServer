@@ -45,14 +45,14 @@ private:
   int sql_port_{3306};
   std::string sql_user_{"root"};
   std::string sql_key_{"password"};
-  std::string db_name_{"database"};
+  std::string db_name_{"ceyewan"};
   int conn_pool_nums_{8};
   int thread_nums_{8};
 };
 
 void ShowHelp() {
   printf("Options:\n \
-    -p --Port           server 监听端口, 默认为 9114\n \
+    -p --Port           server 监听端口, 默认为 8888\n \
     -m --TrigMode       工作模式, 默认为 3, ET 模式\n \
     -t --TimeoutMS      超时时间, 默认为 6000\n \
     -s --SQLport        MySQL 的端口, 默认 3306\n \
